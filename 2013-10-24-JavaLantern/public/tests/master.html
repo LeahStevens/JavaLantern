@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset='utf-8'>
+  <meta content='width=device-width' name='viewport'>
+  <title>Master Template</title>
+  <link href='/css/normalize.css' rel='stylesheet'>
+  <link href='/css/foundation.css' rel='stylesheet'>
+  <link href='/css/app.css' rel='stylesheet'>
+  <script src='/js/vendor/custom.modernizr.js'></script>
+  <script src='/js/tests/keys.js'></script>
+  <link href='/css/qunit-theme-gabe.css' rel='stylesheet'>
+</head>
+<body>
+  <div id='qunit'></div>
+  <div id='qunit-fixture'>
+    <div id='header'>
+      <div class='row'>
+        <div class='small-9 columns'>
+          <h1><span>J</span>AVA</h1>
+          <h1><span>L</span>ANTERN</h1>
+        </div>
+        <div class='small-3 columns'>
+          <div id='blurb'>
+            <h4>Happy Halloween</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='body'>
+      <div class='row'>
+        <div class='small-2 columns'>
+          <h6>Click anywhere on the pumpkin to start making faces.</h6>
+          <div class='tools' id='pumpkinTools'>
+            <div class='row'>
+              <div class='small-12 columns'>
+                <div id='color'>Choose a color</div>
+              </div>
+            </div>
+            <div class='row'>
+              <div class='small-12 columns'>
+                <div id='colorbox'>
+                  <div class='row'>
+                    <div class='small-12 columns'>
+                      <a href="#draw" data-color="#ff0" style="width: 70px; background: #ff0;"></a>
+                      <a href="#draw" data-color="#000" style="width: 70px; background: #000;"></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id='transparency'>Click to Start Over</div>
+            <div id='transparency-slider'>
+              <input id='clearBtn' type='button' value='Delete Face'>
+            </div>
+          </div>
+        </div>
+        <div class='small-10 columns'>
+          <div class='row'>
+            <div class='small-12 columns'>
+              <img src='../img/pumpkin.jpg'>
+              <div id='appendCanvas'></div>
+              <canvas height='500px' id='draw' width='650px;'></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='footer'>
+      <div class='row'>
+        <div class='small-3 columns'>
+          <h6>Project by Leah</h6>
+        </div>
+        <div class='small-6 columns'>
+          <h6>Student at Nashville Softare School</h6>
+        </div>
+        <div class='small-3 columns'>
+          <h6>Halloween 2013</h6>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src='/js/vendor/jquery-1.10.2.js'></script>
+  <script src='/js/vendor/foundation.min.js'></script>
+  <script src='/js/vendor/underscore.js'></script>
+  <script src='/js/vendor/moment.min.js'></script>
+  <script src='/js/vendor/sketch.js'></script>
+  <script src='https://cdn.firebase.com/v0/firebase.js'></script>
+  <!-- %script{src: 'https://maps.googleapis.com/maps/api/js?key=__________&sensor=true'} -->
+  <script src='/js/app/app.js'></script>
+  <script src='/js/vendor/jquery.domchanged.js'></script>
+  <script src='/js/vendor/qunit-1.12.0.js'></script>
+  <script src='/js/tests/master.js'></script>
+</body>

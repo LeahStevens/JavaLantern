@@ -1,0 +1,41 @@
+#header
+  .row
+    .small-9.columns
+      %h1 <span>J</span>AVA
+      %h1 <span>L</span>ANTERN
+    .small-3.columns
+      #blurb
+        %h4 Happy Halloween
+#body
+  .row
+    .small-2.columns
+      %h6 Click anywhere on the pumpkin to start making faces.
+      #pumpkinTools.tools
+
+        .row
+          .small-12.columns
+            #color Choose a color
+        .row
+          .small-12.columns
+            #colorbox
+              .row
+                .small-12.columns
+                  <a href="#draw" data-color="#ff0" style="width: 70px; background: #ff0;"></a>
+                  <a href="#draw" data-color="#000" style="width: 70px; background: #000;"></a>
+        #transparency Click to Start Over
+        #transparency-slider
+          %input#clearBtn{type: 'button', value: 'Delete Face'}
+    .small-10.columns
+      .row
+        .small-12.columns
+          %img(src='../img/pumpkin.jpg')
+          #appendCanvas
+          %canvas#draw{height: '500px', width: '650px;'}
+#footer
+  .row
+    .small-3.columns
+      %h6 Project by Leah
+    .small-6.columns
+      %h6 Student at Nashville Softare School
+    .small-3.columns
+      %h6 Halloween 2013

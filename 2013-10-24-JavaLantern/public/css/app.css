@@ -1,0 +1,72 @@
+body {
+  background-color: black; }
+
+#body {
+  width: 960px;
+  background-color: white;
+  position: auto;
+  margin: auto; }
+  #body h6 {
+    width: 200px;
+    padding-top: 40px; }
+  #body #pumpkinTools {
+    width: 200px;
+    padding-top: 550px;
+    padding-left: 20px; }
+    #body #pumpkinTools #color, #body #pumpkinTools #transparency {
+      background-color: orange; }
+
+#header, #footer {
+  background-color: orange;
+  margin: auto;
+  text-align: center;
+  width: 960px; }
+  #header h1:nth-child(1), #footer h1:nth-child(1) {
+    color: black;
+    display: inline; }
+  #header h1:nth-child(2), #footer h1:nth-child(2) {
+    color: yellow;
+    display: inline; }
+  #header span, #footer span {
+    font-size: 80px; }
+
+#blurb {
+  background-color: white;
+  height: 80px;
+  width: 140px;
+  float: right;
+  margin-right: 50px;
+  text-align: center;
+  border-radius: 50px;
+  margin-top: 15px; }
+
+h6:nth-child(1) {
+  float: left;
+  margin-left: 50px; }
+
+h6:nth-child(2) {
+  float: left;
+  margin-left: 50px; }
+
+h6:nth-child(3) {
+  float: right;
+  margin-right: 50px; }
+
+img {
+  height: 700px;
+  width: 700px; }
+
+#draw {
+  position: absolute;
+  top: 140px;
+  left: 50px; }
+
+a {
+  border: 1px solid black;
+  height: 30px;
+  display: inline-block;
+  margin: 5px 5px 5px 10px; }
+
+input {
+  margin-top: 5px;
+  margin-left: 35px; }
